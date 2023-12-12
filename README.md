@@ -93,7 +93,7 @@ container.EnableConsolePrinting(true);
 Simple `Host` static class to hold the container.
 
 ```C#
-using Revit.DI;
+using ricaun.DI;
 public static class Host
 {
     public static IContainer Container { get; } = ContainerUtils.CreateContainer();

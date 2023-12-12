@@ -262,7 +262,7 @@ namespace ricaun.DI
         {
             if (this.canPrintToConsole)
             {
-                Console.WriteLine("Revit Container request: " + contract.ToString());
+                Console.WriteLine("Container request: " + contract.ToString());
             }
 
             // Always prioritize instances
@@ -294,7 +294,7 @@ namespace ricaun.DI
             }
             else
             {
-                throw new KeyNotFoundException($"{contract.Name} not registered on Revit Container.");
+                throw new KeyNotFoundException($"{contract.Name} not registered on Container.");
             }
         }
 
