@@ -17,4 +17,8 @@
     <ProjectReference Include="..\ricaun.DI\ricaun.DI.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="DI\" />
+  </ItemGroup>
+
 </Project>
