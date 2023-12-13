@@ -9,12 +9,14 @@
 [![.NET 5.0](https://img.shields.io/badge/-.NET%205.0-blue)](https://github.com/ricaun-io/ricaun.DI)
 
 [![ricaun.DI](https://github.com/ricaun-io/.github/assets/12437519/6e3c013c-71f2-46d8-b73a-1fd0d72d8f63)](https://github.com/ricaun-io/ricaun.DI)
+
 Create a `Container` and register your dependencies with `AddSingleton`, `AddScoped` and `AddTransient` methods. 
 Resolve your dependencies with `Resolve` method.
 
 ## Implementation Reference
 
 This project uses the same implementation from [Onboxframework](https://github.com/engthiago/Onboxframework) IOC container system, except by:
+
 ***The `Container` when `Dispose` will dispose all `IDisposable` scoped instances registered in the container.***
 
 ## Container
@@ -34,7 +36,7 @@ Container container = new Container();
 container.Dispose();
 ```
 
-## Singleton
+### Singleton
 ```C#
 // Register a singleton.
 var singleton = new Singleton();
@@ -44,47 +46,53 @@ container.AddSingleton<ISingleton, Singleton>();
 container.AddSingleton<ISingleton, Singleton>(singleton);
 ```
 
-## Scoped
+### Scoped
 ```C#
 // Register a scoped.
 container.AddScoped<Scoped>();
 container.AddScoped<IScoped, Scoped>();
 ```
 
-## Transient
+### Transient
 ```C#
 // Register a transient.
 container.AddTransient<Transient>();
 container.AddTransient<ITransient, Transient>();
 ```
 
-## Resolve
+### Resolve
 ```C#
+// Resolve the ISingleton.
 var singleton = container.Resolve<ISingleton>();
 ```
 
 ```C#
+// Resolve the IScoped.
 var scoped = container.Resolve<IScoped>();
 ```
 
 ```C#
+// Resolve the ITransient.
 var transient = container.Resolve<ITransient>();
 ```
 
 ### ResolveOrNull
 ```C#
+// Resolve the ISingleton.
 var singleton = container.ResolveOrNull<ISingleton>();
 ```
 
 ```C#
+// Resolve the IScoped.
 var scoped = container.ResolveOrNull<IScoped>();
 ```
 
 ```C#
+// Resolve the ITransient.
 var transient = container.ResolveOrNull<ITransient>();
 ```
 
-## Enable Console
+### Enable Console
 ```C#
 // Enable Console.
 container.EnableConsolePrinting(true);
