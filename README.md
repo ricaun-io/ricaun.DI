@@ -8,7 +8,9 @@
 [![.NET Standard 2.0](https://img.shields.io/badge/-.NET%20Standard%202.0-blue)](../..)
 [![.NET 5.0](https://img.shields.io/badge/-.NET%205.0-blue)](../..)
 
-Dependency injection container for C#. Create a `Container` and register your dependencies with `AddSingleton`, `AddScoped` and `AddTransient` methods. Resolve your dependencies with `Resolve` method.
+Dependency injection container for C#. 
+Create a `Container` and register your dependencies with `AddSingleton`, `AddScoped` and `AddTransient` methods. 
+Resolve your dependencies with `Resolve` method.
 
 ## Implementation Reference
 

@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using ricaun.DI.Tests.Utils;
+using System;
 
 namespace ricaun.DI.Tests
 {
@@ -14,7 +15,19 @@ namespace ricaun.DI.Tests
         }
 
         [Test]
-        public void Scoped_HasSingleton()
+        public void Scoped_AddAbstract_Throws()
+        {
+            Assert.Throws<InvalidOperationException>(Container.AddScoped<Abstract>);
+        }
+
+        [Test]
+        public void Scoped_AddInterface_Throws()
+        {
+            Assert.Throws<InvalidOperationException>(Container.AddScoped<IScoped>);
+        }
+
+        [Test]
+        public void Scoped_HasScoped()
         {
             Container.AddScoped<IScoped, Scoped>();
             Assert.True(Container.HasScopedInstance<IScoped>());

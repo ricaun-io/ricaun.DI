@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using ricaun.DI.Tests.Utils;
+using System;
 
 namespace ricaun.DI.Tests
 {
@@ -11,6 +12,18 @@ namespace ricaun.DI.Tests
             Assert.IsNull(Container.ResolveOrNull<ITransient>());
             Container.AddTransient<ITransient, Transient>();
             Assert.IsNotNull(Container.ResolveOrNull<ITransient>());
+        }
+
+        [Test]
+        public void Transient_AddAbstract_Throws()
+        {
+            Assert.Throws<InvalidOperationException>(Container.AddTransient<Abstract>);
+        }
+
+        [Test]
+        public void Transient_AddInterface_Throws()
+        {
+            Assert.Throws<InvalidOperationException>(Container.AddTransient<ITransient>);
         }
 
         [Test]

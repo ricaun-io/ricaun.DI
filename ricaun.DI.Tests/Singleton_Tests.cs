@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using ricaun.DI.Tests.Utils;
+using System;
 
 namespace ricaun.DI.Tests
 {
@@ -11,6 +12,18 @@ namespace ricaun.DI.Tests
             Assert.IsNull(Container.ResolveOrNull<ISingleton>());
             Container.AddSingleton<ISingleton, Singleton>();
             Assert.IsNotNull(Container.ResolveOrNull<ISingleton>());
+        }
+
+        [Test]
+        public void Singleton_AddAbstract_Throws()
+        {
+            Assert.Throws<InvalidOperationException>(Container.AddSingleton<Abstract>);
+        }
+
+        [Test]
+        public void Singleton_AddInterface_Throws()
+        {
+            Assert.Throws<InvalidOperationException>(Container.AddSingleton<ISingleton>);
         }
 
         [Test]

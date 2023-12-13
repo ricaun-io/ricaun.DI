@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Test `Scoped`
 - Test `Transient`
 - Test `DI` and `Dispose`
+- Test `Abstract` / `Interface` throws
 
 [vNext]: ../../compare/1.0.0...HEAD
 [1.0.0]: ../../compare/1.0.0

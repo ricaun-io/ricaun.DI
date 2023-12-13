@@ -5,6 +5,7 @@ namespace ricaun.DI.Tests.Utils
 {
     public abstract class BaseContainerTests
     {
+        public abstract class Abstract { }
         public class Singleton : ISingleton { }
         public interface ISingleton { }
         public class Scoped : IScoped { }
