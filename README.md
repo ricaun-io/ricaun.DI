@@ -4,14 +4,16 @@
 [![Nuke](https://img.shields.io/badge/Nuke-Build-blue)](https://nuke.build/)
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Build](https://github.com/ricaun-io/ricaun.DI/actions/workflows/Build.yml/badge.svg)](https://github.com/ricaun-io/ricaun.DI/actions)
-[![.NET Framework 4.0](https://img.shields.io/badge/.NET%20Framework%204.0-blue.svg)](https://github.com/ricaun-io/ricaun.DI)
-[![.NET Standard 2.0](https://img.shields.io/badge/-.NET%20Standard%202.0-blue)](https://github.com/ricaun-io/ricaun.DI)
-[![.NET 5.0](https://img.shields.io/badge/-.NET%205.0-blue)](https://github.com/ricaun-io/ricaun.DI)
+[![Release](https://img.shields.io/nuget/v/ricaun.DI?logo=nuget&label=release&color=blue)](https://www.nuget.org/packages/ricaun.DI)
 
 [![ricaun.DI](https://github.com/ricaun-io/.github/assets/12437519/6e3c013c-71f2-46d8-b73a-1fd0d72d8f63)](https://github.com/ricaun-io/ricaun.DI)
 
 Create a `Container` and register your dependencies with `AddSingleton`, `AddScoped` and `AddTransient` methods. 
 Resolve your dependencies with `Resolve` method.
+
+## ricaun.Revit.DI
+
+To use this library in Autodesk Revit, use the [ricaun.Revit.DI](https://github.com/ricaun-io/ricaun.Revit.DI) library.
 
 ## Implementation Reference
 
