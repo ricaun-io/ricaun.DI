@@ -32,7 +32,7 @@
 
   <PropertyGroup>
     <PackageId>ricaun.DI</PackageId>
-    <Version>1.0.0-alpha</Version>
+    <Version>1.0.0-alpha.1</Version>
     <ProjectGuid>{DE5487C5-63A6-426B-A182-6C37AABDD65A}</ProjectGuid>
   </PropertyGroup>
 
@@ -65,6 +65,7 @@
     <RepositoryUrl>https://github.com/$(GitHubRepositoryOwner)/$(PackageId)</RepositoryUrl>
     <RepositoryType>github</RepositoryType>
     <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIconUrl />
   </PropertyGroup>
 
