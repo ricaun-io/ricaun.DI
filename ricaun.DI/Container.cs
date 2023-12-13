@@ -375,7 +375,7 @@ namespace ricaun.DI
         /// <summary>
         /// Clears and releases resources from the container
         /// </summary>
-        public void Clear()
+        public virtual void Clear()
         {
             this.transientTypes.Clear();
             this.scopedInstances.Clear();
