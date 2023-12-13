@@ -1,14 +1,14 @@
 # ricaun.DI
 
-[![Visual Studio 2022](https://img.shields.io/badge/Visual%20Studio-2022-blue)](../..)
+[![Visual Studio 2022](https://img.shields.io/badge/Visual%20Studio-2022-blue)](https://github.com/ricaun-io/ricaun.DI)
 [![Nuke](https://img.shields.io/badge/Nuke-Build-blue)](https://nuke.build/)
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Build](../../actions/workflows/Build.yml/badge.svg)](../../actions)
-[![.NET Framework 4.5](https://img.shields.io/badge/.NET%20Framework%204.5-blue.svg)](../..)
-[![.NET Standard 2.0](https://img.shields.io/badge/-.NET%20Standard%202.0-blue)](../..)
-[![.NET 5.0](https://img.shields.io/badge/-.NET%205.0-blue)](../..)
+[![Build](https://github.com/ricaun-io/ricaun.DI/actions/workflows/Build.yml/badge.svg)](https://github.com/ricaun-io/ricaun.DI/actions)
+[![.NET Framework 4.5](https://img.shields.io/badge/.NET%20Framework%204.5-blue.svg)](https://github.com/ricaun-io/ricaun.DI)
+[![.NET Standard 2.0](https://img.shields.io/badge/-.NET%20Standard%202.0-blue)](https://github.com/ricaun-io/ricaun.DI)
+[![.NET 5.0](https://img.shields.io/badge/-.NET%205.0-blue)](https://github.com/ricaun-io/ricaun.DI)
 
-Dependency injection container for C#. 
+[![ricaun.DI](https://github.com/ricaun-io/.github/assets/12437519/6e3c013c-71f2-46d8-b73a-1fd0d72d8f63)](https://github.com/ricaun-io/ricaun.DI)
 Create a `Container` and register your dependencies with `AddSingleton`, `AddScoped` and `AddTransient` methods. 
 Resolve your dependencies with `Resolve` method.
 
@@ -120,7 +120,7 @@ public static class HostExtension
 
 ## Release
 
-* [Latest release](../../releases/latest)
+* [Latest release](https://github.com/ricaun-io/ricaun.DI/releases/latest)
 
 ## License
 
@@ -128,4 +128,4 @@ This project is [licensed](LICENSE) under the [MIT Licence](https://en.wikipedia
 
 ---
 
-Do you like this project? Please [star this project on GitHub](../../stargazers)!
+Do you like this project? Please [star this project on GitHub](https://github.com/ricaun-io/ricaun.DI/stargazers)!
