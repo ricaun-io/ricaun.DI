@@ -39,9 +39,18 @@ namespace ricaun.DI
         private readonly List<Type> currentTypes = new List<Type>();
         private Type currentType;
 
-        private bool isScope = false;
-        private bool canPrintToConsole = false;
-        private bool disposeScopedInstances = true;
+        /// <summary>
+        /// Is container scope. Default is false.
+        /// </summary>
+        protected bool isScope = false;
+        /// <summary>
+        /// Container can print to console. Default is false.
+        /// </summary>
+        protected bool canPrintToConsole = false;
+        /// <summary>
+        /// Container dispose scoped instances. Default is true.
+        /// </summary>
+        protected bool disposeScopedInstances = true;
 
         /// <summary>
         /// Adds an implementation as a singleton on the container.
@@ -419,7 +428,7 @@ namespace ricaun.DI
         /// <summary>
         /// Clears and releases resources from the container
         /// </summary>
-        public void Dispose()
+        public virtual void Dispose()
         {
             if (this.canPrintToConsole)
             {
