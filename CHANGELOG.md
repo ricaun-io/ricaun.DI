@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Update `Container` the methods `Dispose` and `Clear` to `virtual`
 ### Tests
 - Test `Container`
+- Test `ContainerUtils`
 - Test `Singleton`
 - Test `Scoped`
 - Test `Transient`
