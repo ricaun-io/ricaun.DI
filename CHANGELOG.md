@@ -7,8 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [1.0.0] / 2023-12-12
 ### DI
 - DI container code based from [Onboxframework](https://github.com/engthiago/Onboxframework).
-- Add `ContainerUtils` with `CreateContainer`.
-- Add `IContainerScopedInstances` with `DisposeScopedInstances`
+- Add `ContainerUtils` with `CreateContainer` and `CreateContainer(enableDisposeScopedInstances)`
+- Add `IContainerScopedInstances` with `DisposeScopedInstances` (default: false)
 - Update `Container` variables to `protected`
 - Update `Container` the methods `Dispose` and `Clear` to `virtual`
 ### Tests

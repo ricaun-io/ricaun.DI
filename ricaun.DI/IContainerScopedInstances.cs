@@ -6,7 +6,7 @@
     public interface IContainerScopedInstances
     {
         /// <summary>
-        /// Enables or disables the disposal of all scoped instances when the container <see cref="System.IDisposable.Dispose"/>. Default is true.
+        /// Enables or disables the disposal of all scoped instances when the container <see cref="System.IDisposable.Dispose"/>. Default is false.
         /// </summary>
         /// <param name="enabled">flag to enable or disable dispose scoped instances.</param>
         public void EnableDisposeScopedInstances(bool enabled);

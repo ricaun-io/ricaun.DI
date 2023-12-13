@@ -45,5 +45,14 @@ namespace ricaun.DI.Tests
             Assert.IsNotNull(container.ResolveOrNull<IContainer>());
             Assert.IsNotNull(container.ResolveOrNull<IContainerResolver>());
         }
+
+        [Test]
+        public void ContainerUtils_InjectContainerToItself_IsNotNull()
+        {
+            var container = new Container();
+            ContainerUtils.InjectContainerToItself(container);
+            Assert.IsNotNull(container.ResolveOrNull<IContainer>());
+            Assert.IsNotNull(container.ResolveOrNull<IContainerResolver>());
+        }
     }
 }

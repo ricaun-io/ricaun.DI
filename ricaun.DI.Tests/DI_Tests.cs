@@ -18,17 +18,47 @@ namespace ricaun.DI.Tests
             Container.AddScoped<IA, A>();
             var a = Container.ResolveOrNull<IA>();
             Container.Dispose();
+            Assert.False(a.IsDispose);
+        }
+
+        [Test]
+        public void DI_A_ContainerDispose_Enable()
+        {
+            Container.AddScoped<IA, A>();
+            Container.EnableDisposeScopedInstances(true);
+            var a = Container.ResolveOrNull<IA>();
+            Container.Dispose();
             Assert.True(a.IsDispose);
         }
 
         [Test]
-        public void DI_A_ContainerDispose_Disable()
+        public void ContainerUtils_ContainerDispose()
         {
-            Container.AddScoped<IA, A>();
-            Container.EnableDisposeScopedInstances(false);
-            var a = Container.ResolveOrNull<IA>();
-            Container.Dispose();
+            var container = ContainerUtils.CreateContainer();
+            container.AddScoped<IA, A>();
+            var a = container.ResolveOrNull<IA>();
+            container.Dispose();
             Assert.False(a.IsDispose);
+        }
+
+        [Test]
+        public void ContainerUtils_ContainerDispose_Disable()
+        {
+            var container = ContainerUtils.CreateContainer(false);
+            container.AddScoped<IA, A>();
+            var a = container.ResolveOrNull<IA>();
+            container.Dispose();
+            Assert.False(a.IsDispose);
+        }
+
+        [Test]
+        public void ContainerUtils_ContainerDispose_Enable()
+        {
+            var container = ContainerUtils.CreateContainer(true);
+            container.AddScoped<IA, A>();
+            var a = container.ResolveOrNull<IA>();
+            container.Dispose();
+            Assert.True(a.IsDispose);
         }
 
         [Test]

@@ -4,7 +4,7 @@
 [![Nuke](https://img.shields.io/badge/Nuke-Build-blue)](https://nuke.build/)
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Build](https://github.com/ricaun-io/ricaun.DI/actions/workflows/Build.yml/badge.svg)](https://github.com/ricaun-io/ricaun.DI/actions)
-[![.NET Framework 4.5](https://img.shields.io/badge/.NET%20Framework%204.5-blue.svg)](https://github.com/ricaun-io/ricaun.DI)
+[![.NET Framework 4.0](https://img.shields.io/badge/.NET%20Framework%204.0-blue.svg)](https://github.com/ricaun-io/ricaun.DI)
 [![.NET Standard 2.0](https://img.shields.io/badge/-.NET%20Standard%202.0-blue)](https://github.com/ricaun-io/ricaun.DI)
 [![.NET 5.0](https://img.shields.io/badge/-.NET%205.0-blue)](https://github.com/ricaun-io/ricaun.DI)
 
@@ -17,14 +17,9 @@ Resolve your dependencies with `Resolve` method.
 
 This project uses the same implementation from [Onboxframework](https://github.com/engthiago/Onboxframework) IOC container system, except by:
 
-***The `Container` when `Dispose` will dispose all `IDisposable` scoped instances registered in the container.***
+***The `Container` when `Dispose` can dispose all `IDisposable` scoped instances registered in the container.***
 
 ## Container
-
-```C#
-// Create Container with itself registered as a singleton.
-IContainer container = ContainerUtils.CreateContainer();
-```
 
 ```C#
 // Empty Container.
@@ -34,6 +29,18 @@ Container container = new Container();
 ```C#
 // Dispose Container.
 container.Dispose();
+```
+
+### ContainerUtils
+
+```C#
+// Create Container with itself registered as a singleton.
+IContainer container = ContainerUtils.CreateContainer();
+```
+
+```C#
+// Create Container with itself registered as a singleton, with dispose scoped instances enabled.
+IContainer container = ContainerUtils.CreateContainer(true);
 ```
 
 ### Singleton
@@ -96,6 +103,12 @@ var transient = container.ResolveOrNull<ITransient>();
 ```C#
 // Enable Console.
 container.EnableConsolePrinting(true);
+```
+
+### Enable Dispose Scoped Instances
+```C#
+// Enable Dispose Scoped Instances.
+container.EnableDisposeScopedInstances(true);
 ```
 
 ## Static Container Example

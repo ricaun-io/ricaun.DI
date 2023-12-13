@@ -16,6 +16,18 @@
         }
 
         /// <summary>
+        /// Create container with itself registered as a singleton.
+        /// </summary>
+        /// <param name="enableDisposeScopedInstances">flag to enable or disable dispose scoped instances.</param>
+        /// <returns>The created container.</returns>
+        public static IContainer CreateContainer(bool enableDisposeScopedInstances)
+        {
+            var container = new Container();
+            container.EnableDisposeScopedInstances(enableDisposeScopedInstances);
+            return InjectContainerToItself(container);
+        }
+
+        /// <summary>
         /// Inject container to itself as a singleton.
         /// </summary>
         /// <param name="container"></param>

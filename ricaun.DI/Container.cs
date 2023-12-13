@@ -48,9 +48,9 @@ namespace ricaun.DI
         /// </summary>
         protected bool canPrintToConsole = false;
         /// <summary>
-        /// Container dispose scoped instances. Default is true.
+        /// Container dispose scoped instances. Default is false.
         /// </summary>
-        protected bool disposeScopedInstances = true;
+        protected bool disposeScopedInstances = false;
 
         /// <summary>
         /// Adds an implementation as a singleton on the container.
@@ -481,7 +481,7 @@ namespace ricaun.DI
         }
 
         /// <summary>
-        /// Enables or disables the disposal of all scoped instances when the container <see cref="Dispose"/>. Default is true.
+        /// Enables or disables the disposal of all scoped instances when the container <see cref="Dispose"/>. Default is false.
         /// </summary>
         /// <param name="enabled">flag to enable or disable dispose scoped instances.</param>
         public void EnableDisposeScopedInstances(bool enabled)
