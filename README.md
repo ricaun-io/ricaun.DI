@@ -6,7 +6,7 @@
 [![Build](https://github.com/ricaun-io/ricaun.DI/actions/workflows/Build.yml/badge.svg)](https://github.com/ricaun-io/ricaun.DI/actions)
 [![Release](https://img.shields.io/nuget/v/ricaun.DI?logo=nuget&label=release&color=blue)](https://www.nuget.org/packages/ricaun.DI)
 
-[![ricaun.DI](https://github.com/ricaun-io/.github/assets/12437519/6e3c013c-71f2-46d8-b73a-1fd0d72d8f63)](https://github.com/ricaun-io/ricaun.DI)
+[![ricaun.DI](assets/ricaun.DI.png)](https://github.com/ricaun-io/ricaun.DI)
 
 Create a `Container` and register your dependencies with `AddSingleton`, `AddScoped` and `AddTransient` methods. 
 Resolve your dependencies with `Resolve` method.
