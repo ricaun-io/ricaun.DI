@@ -6,10 +6,7 @@
 [![Build](https://github.com/ricaun-io/ricaun.DI/actions/workflows/Build.yml/badge.svg)](https://github.com/ricaun-io/ricaun.DI/actions)
 [![Release](https://img.shields.io/nuget/v/ricaun.DI?logo=nuget&label=release&color=blue)](https://www.nuget.org/packages/ricaun.DI)
 
-[![ricaun.DI](https://raw.githubusercontent.com/ricaun-io/ricaun.DI/develop/assets/ricaun.DI.png)](https://github.com/ricaun-io/ricaun.DI)
-[![ricaun.DI](https://github.com/ricaun-io/ricaun.DI/blob/develop/assets/ricaun.DI.png?raw=true)](https://github.com/ricaun-io/ricaun.DI)
-[![Banner](https://github.com/ricaun/test-assets/blob/main/Banner.png?raw=true)](https://github.com/ricaun-io/ricaun.DI)
-[![Banner](https://raw.githubusercontent.com/ricaun/test-assets/main/Banner.png)](https://github.com/ricaun-io/ricaun.DI)
+[![ricaun.DI](https://raw.githubusercontent.com/ricaun/test-assets/main/assets/ricaun.DI.png)](https://github.com/ricaun-io/ricaun.DI)
 
 Create a `Container` and register your dependencies with `AddSingleton`, `AddScoped` and `AddTransient` methods. 
 Resolve your dependencies with `Resolve` method.
@@ -20,7 +17,7 @@ To use this library in Autodesk Revit, use the [ricaun.Revit.DI](https://github.
 
 ## Implementation Reference
 
-This project uses the same implementation from [Onboxframework](https://github.com/engthiago/Onboxframework) IOC container system, except by:
+This project uses the same implementation from [Onbox](https://github.com/engthiago/Onboxframework) IOC container system, except by:
 
 ***The `Container` when `Dispose` can dispose all `IDisposable` scoped instances registered in the container.***
 
