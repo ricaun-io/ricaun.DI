@@ -32,7 +32,7 @@
 
   <PropertyGroup>
     <PackageId>ricaun.DI</PackageId>
-    <Version>1.0.0-rc</Version>
+    <Version>1.0.0</Version>
     <ProjectGuid>{DE5487C5-63A6-426B-A182-6C37AABDD65A}</ProjectGuid>
   </PropertyGroup>
 
